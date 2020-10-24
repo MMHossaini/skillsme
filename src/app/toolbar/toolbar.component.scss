@@ -8,4 +8,23 @@
         height: 38px;
         margin-left: 12px;
     }
+
+    .left-menu-wrapper {
+        margin-left: 100px;
+        .icon-button {
+            display: inline-block;
+            cursor: pointer;
+            width: 38px;
+            height: 38px;
+            border-radius: 6px;
+            &:hover {
+                background: #41d6c3;
+            }
+            svg {
+                width: 18px;
+                height: 18px;
+                stroke: #999;
+            }
+        }
+    }
 }
