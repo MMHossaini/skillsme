@@ -1,1 +1,30 @@
-<p>feed works!</p>
+<!-- this page has three columns -->
+<!-- left middle and right. -->
+<!-- Left and right columns are hidden on mobile -->
+
+<style>
+    .wrapper {
+        padding-top: 20px;
+    }
+
+    .stories-wrapper {
+        border: 1px solid #e8e8e8;
+        background: #fff;
+        border-radius: 6px;
+        width: 318px;
+    }
+</style>
+<div class="wrapper" fxLayout="row">
+    <div fxFlex="28" class="left-column">
+        left
+    </div>
+    <div fxFlex="44" class="middle-column">
+        center
+    </div>
+    <div fxFlex="28" class="right-column">
+        <div class="stories-wrapper">
+            stories
+        </div>
+
+    </div>
+</div>

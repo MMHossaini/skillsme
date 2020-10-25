@@ -4,8 +4,9 @@
 
     <!-- left side menus -->
     <span class="left-menu-wrapper">
-        <span class="icon-button" [popper]="popper1Content" [popperShowOnStart]="true" [popperTrigger]="'click'"
-            [popperHideOnClickOutside]="true" [popperHideOnScroll]="true" [popperPlacement]="'bottom'">
+        <span class="icon-button" fxFlex fxLayoutAlign="center center" [popper]="popperFriendRequest"
+            [popperApplyClass]="'popper-wrapper'"  [popperTrigger]="'click'" [popperHideOnClickOutside]="true"
+            [popperHideOnScroll]="true" [popperPlacement]="'bottom-end'">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="feather feather-heart">
@@ -15,7 +16,7 @@
             </svg>
         </span>
 
-        <span class="icon-button">
+        <span class="icon-button" fxFlex fxLayoutAlign="center center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="feather feather-bell">
@@ -24,7 +25,7 @@
             </svg>
         </span>
 
-        <span class="icon-button">
+        <span class="icon-button" fxFlex fxLayoutAlign="center center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="feather feather-mail">
@@ -33,7 +34,7 @@
             </svg>
         </span>
 
-        <span class="icon-button">
+        <span class="icon-button" fxFlex fxLayoutAlign="center center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="feather feather-message-square">
@@ -47,6 +48,6 @@
 
 
 
-<popper-content #popper1Content>
+<popper-content #popperFriendRequest>
     <p class="bold">Popper on bottom</p>
 </popper-content>
